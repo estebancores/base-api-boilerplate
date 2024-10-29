@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "health services to connect stetical saloons and customers",
+  "description": "p´rojects description",
   "main": "index.js",
   "type": "module",
   "scripts": {

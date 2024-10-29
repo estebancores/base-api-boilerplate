@@ -1,2 +1,0 @@
-20241029	11:56:17	56321847-45e3-461d-97ac-db20ca78dd59	insert into "users" ("email", "id", "password") values ($1, $2, $3) - null value in column "refresh_token" of relation "users" violates not-null constraint
-20241029	11:56:43	c58d6753-54ae-46a9-8c67-943e80227394	insert into "users" ("email", "id", "password") values ($1, $2, $3) - null value in column "refresh_token" of relation "users" violates not-null constraint
