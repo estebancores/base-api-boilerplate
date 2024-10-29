@@ -1,0 +1,31 @@
+version: "3.1"
+
+services:
+  pgdb:
+    image: postgres:15
+    container_name: postgresql
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=toor
+      - POSTGRES_DB=db-api
+    ports:
+      - 5432:5432
+    volumes:
+     - db-pg:/var/lib/postgresql/data
+  
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: mongodb
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=toor
+        - MONGO_INITDB_DATABASE=db-api
+    ports:
+        - '27017:27017'
+    volumes:
+      - db-mongo:/var/lib/mongodb/data
+        
+volumes:
+  db-pg:
+  db-mongo:
